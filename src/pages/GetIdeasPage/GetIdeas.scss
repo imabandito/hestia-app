@@ -1,0 +1,23 @@
+@import '../../components/UI/Loader/Loader.scss';
+
+.get-ideas {
+  display: flex;
+  flex-direction: column;
+  &-wrapper {
+    padding: 0 18px 0 18px;
+  }
+
+  &__grid {
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    justify-items: center;
+    gap: 20px;
+  }
+
+  &__observer {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+  }
+}

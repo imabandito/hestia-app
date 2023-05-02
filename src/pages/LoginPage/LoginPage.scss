@@ -1,0 +1,30 @@
+.auth-cabinet {
+  padding: 0px 18px;
+  display: flex;
+  align-items: center;
+  &-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__incorrect {
+      color: $crimson;
+      text-align: center;
+    }
+  }
+
+  &-tabs {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .reply-form {
+    margin: 0;
+    padding: 16px;
+  }
+}
+
+.personal-cabinet {
+  padding: 18px;
+}

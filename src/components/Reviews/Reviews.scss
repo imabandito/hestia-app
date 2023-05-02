@@ -1,0 +1,12 @@
+.reviews {
+  &__pagination {
+    margin-top: 16px;
+  }
+}
+
+.product-reviews__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 40px;
+}

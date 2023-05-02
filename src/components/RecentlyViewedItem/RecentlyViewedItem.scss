@@ -1,0 +1,42 @@
+.recently-viewed-item {
+  background-color: $white;
+  max-width: 136px;
+  height: 241px;
+  padding: 8px 16px 12px;
+
+  &__image {
+    width: 100%;
+  }
+
+  &__title {
+    line-height: 18px;
+    color: $black;
+  }
+
+  &__prices {
+    position: relative;
+    margin-top: 40px;
+  }
+}
+
+.recent-prices {
+  &__oldPrice {
+    font-size: $fs-milli;
+    line-height: 10px;
+    color: $grey;
+    text-decoration: line-through;
+  }
+
+  &__newPrice {
+    font-size: $fs-medium;
+    font-weight: 500;
+    color: $crimson;
+  }
+
+  &__fullPrice {
+    padding-top: 10px;
+    font-size: $fs-medium;
+    font-weight: 500;
+    color: $black;
+  }
+}

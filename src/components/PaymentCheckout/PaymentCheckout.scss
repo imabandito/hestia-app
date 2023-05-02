@@ -1,0 +1,85 @@
+.payment-checkout {
+  h5 {
+    font-weight: 600;
+    font-size: $fs-h5;
+    line-height: 28px;
+    color: $black-dark;
+  }
+
+  &-sum {
+    margin: 26px 0px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__amount {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #030407;
+    }
+
+    &__number {
+      font-weight: 450;
+      font-size: $fs-h5;
+      line-height: 16px;
+      color: #d04585;
+    }
+  }
+
+  &__or {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+
+    &-name {
+      margin: 0px 25px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: $black-dark;
+    }
+  }
+
+  &__google-pay {
+    width: 100%;
+
+    .gpay-card-info-container.black {
+      height: 56px;
+      border-radius: 0px;
+    }
+  }
+
+  &-apple-pay {
+    padding: 10px;
+    img {
+      height: 34px;
+    }
+
+    &:not(:disabled):hover {
+      background: #272b2e;
+    }
+  }
+}
+
+.google-pay-button {
+  margin-top: 20px;
+}
+
+.google-pay-wrapper {
+  position: relative;
+}
+
+.googlepay-overlay {
+  box-sizing: border-box;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  z-index: 1;
+  border: 1px solid black;
+}

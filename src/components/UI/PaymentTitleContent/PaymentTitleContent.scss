@@ -1,0 +1,17 @@
+.payment-accordion {
+  &__text {
+    text-align: start;
+  }
+
+  &__title {
+    font-size: $fs-h6;
+  }
+
+  &__description {
+    margin-top: 8px;
+    font-size: $fs-medium;
+    span {
+      font-weight: 600;
+    }
+  }
+}

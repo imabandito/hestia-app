@@ -1,0 +1,27 @@
+.description {
+  &__text {
+    font-size: $fs-medium;
+    color: $grey-superDark;
+    margin: 13px 0px 30px;
+  }
+
+  &__learn-more {
+    color: $green;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background: $green;
+      width: 0%;
+      height: 1px;
+      bottom: 0;
+      transition: 0.2s;
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 1px 6px;
+  font-size: $fs-micro;
+
+  &_sale {
+    color: $white;
+    background-color: $red-blood;
+  }
+
+  &_new {
+    color: $white;
+    background-color: $dark-blue;
+  }
+
+  &_top {
+    color: $white;
+    background-color: $orange;
+  }
+
+  &_review {
+    background-color: $green-light;
+  }
+
+  &_answer {
+    background-color: $orange;
+  }
+
+  &_popular {
+    color: $white;
+    background-color: $green;
+  }
+
+  &_question {
+    background-color: $green;
+  }
+}
+
+.tag_pdp {
+  position: absolute;
+  top: -7px;
+  left: -14px;
+  font-size: $fs-default;
+  line-height: 18px;
+  z-index: 20;
+}

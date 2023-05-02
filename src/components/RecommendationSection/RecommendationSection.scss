@@ -1,0 +1,20 @@
+.recommendation {
+  background: $green-superLight;
+
+  @include for-tablet-up {
+    background: $grey-light;
+  }
+  &__box {
+    padding: 0 18px 48px;
+  }
+
+  &__textbox {
+    padding: 16px 0 8px 0;
+  }
+}
+
+.recently-viewed-heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}

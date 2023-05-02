@@ -1,0 +1,41 @@
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  &__text {
+    font-size: $fs-medium;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: $grey-dark;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &_white {
+      svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .social-media {
+    &__icons {
+      a {
+        padding: 2px;
+        transition: all 0.2s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

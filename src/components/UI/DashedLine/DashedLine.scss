@@ -1,0 +1,12 @@
+.dashed-line {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    height: 1px;
+    width: 2px;
+    background: #636363;
+    border-radius: 0.5px;
+  }
+}

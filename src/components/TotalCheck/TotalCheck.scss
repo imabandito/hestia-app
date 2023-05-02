@@ -1,0 +1,70 @@
+.check {
+  margin-top: 24px;
+  padding: 16px;
+  background: $white;
+
+  & > h4 {
+    font-weight: 400;
+    font-size: $fs-h4;
+    line-height: 31px;
+    color: #030407;
+    margin-bottom: 14px;
+  }
+
+  &-row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__descr,
+    &__sum {
+      font-weight: 400;
+      font-size: $fs-milli;
+      line-height: 16px;
+      color: #030407;
+    }
+
+    &__sum {
+      color: $grey-deep;
+    }
+
+    &:not(:first-child) {
+      margin-top: 6px;
+    }
+
+    &_price {
+      p {
+        font-weight: 500;
+        font-size: $fs-medium;
+        color: #030407;
+      }
+    }
+  }
+
+  &__grey-line {
+    height: 1px;
+    background: #c9cdd6;
+    margin: 16px 0px 14px;
+  }
+}
+
+.button_total-check {
+  margin-top: 20px;
+  padding: 18px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid $black;
+  transition: 0.3s;
+
+  &:not(:disabled):hover {
+    background: $white;
+    color: $black;
+  }
+
+  &:disabled {
+    background: $grey-deep;
+    border: 1px solid $grey-deep;
+    cursor: not-allowed;
+  }
+}

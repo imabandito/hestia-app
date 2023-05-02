@@ -1,0 +1,12 @@
+.catalog {
+  &__search-items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 7.5px;
+  }
+
+  &__items-pagination {
+    background-color: $white;
+  }
+}

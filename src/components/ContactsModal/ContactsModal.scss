@@ -1,0 +1,93 @@
+.contacts-modal {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 160;
+  }
+
+  &__box {
+    position: fixed;
+    left: 50%;
+    bottom: -200px;
+    z-index: 161;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 80%;
+    max-width: 584px;
+    height: 0;
+    padding: 32px 16px;
+    background-color: #f3f5f9;
+    transform: translate(-50%, -10%);
+    transition: all 0.5s ease;
+
+    svg {
+      transition: all 0.5s ease;
+    }
+
+    &_active {
+      height: 370px;
+      transform: translate(-50%, -250px);
+    }
+  }
+
+  &__close-button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: -12%;
+    background-color: $white;
+    padding: 10px;
+    border-radius: 50%;
+    transform: translate(-50%, -12%);
+    cursor: pointer;
+
+    &:hover {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    padding: 8px 20px;
+    background-color: $white;
+    color: $black;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    &:active {
+      transform: scale(1);
+      box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-text {
+    font-size: 10px;
+    line-height: 12px;
+    color: #747474;
+  }
+}

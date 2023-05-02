@@ -1,0 +1,77 @@
+.catalog {
+  &__search-box {
+    display: flex;
+    flex-direction: column;
+    column-gap: 8px;
+
+    &__filter {
+      margin-top: 20px;
+    }
+  }
+
+  &__search-box__options {
+    display: flex;
+    column-gap: 8px;
+  }
+
+  .color-picker__group {
+    input[type='radio'] {
+      padding: 0;
+    }
+  }
+
+  &__select-box {
+    position: relative;
+    width: 50%;
+    transition: all 0.2s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 37%;
+      right: 20px;
+      width: 6px;
+      height: 6px;
+      border-top: 1.5px solid $black;
+      border-right: 1.5px solid $black;
+      transform: rotate(135deg);
+    }
+  }
+
+  @media (min-width: 768px) {
+    &__filter-btn {
+      width: 20%;
+    }
+
+    &__select-box {
+      width: 20%;
+    }
+  }
+
+  @include for-mobile-down {
+    .button_black,
+    select {
+      font-size: $fs-default;
+    }
+  }
+}
+
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  width: 100%;
+  font-size: inherit;
+  text-transform: capitalize;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+.catalog-select {
+  padding: 11.5px 15px;
+  border: 2px solid $black;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #fff;
+}

@@ -1,0 +1,41 @@
+.categories-home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 16px 50px;
+
+  &__row {
+    align-self: normal;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+
+    @include for-tablet-up {
+      grid-template-columns: repeat(4, 1fr);
+      justify-items: center;
+      margin-top: 10px;
+
+      .categoryCard {
+        width: 90%;
+      }
+    }
+  }
+
+  @include for-tablet-up {
+    .categories-home-section {
+      &__heading {
+        font-size: 28px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__heading {
+    align-self: start;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+}

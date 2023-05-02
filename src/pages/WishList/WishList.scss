@@ -1,0 +1,23 @@
+.wish-list {
+  h2 {
+    font-size: $fs-h2;
+    text-align: center;
+    margin: 20px 0px 40px;
+  }
+
+  &__products {
+    margin: 20px 0px;
+  }
+
+  &__sorting {
+    padding: 0px 8px;
+
+    .catalog__search-box__options {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__wrapper {
+    padding: 20px 18px;
+  }
+}

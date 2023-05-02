@@ -1,0 +1,50 @@
+.checkout-card {
+  width: max-content;
+
+  &__upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 8px;
+    margin: 16px 0px 8px;
+    img {
+      max-height: 11px;
+    }
+    span {
+      margin-left: 8px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+
+    &-liqpay {
+      img {
+        max-height: 16px;
+      }
+    }
+  }
+
+  &-safety {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+
+      img {
+        max-height: 16px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 14px;
+        letter-spacing: 0.1px;
+        color: $black-dark;
+      }
+    }
+  }
+}

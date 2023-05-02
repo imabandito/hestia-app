@@ -1,0 +1,42 @@
+.wrapper {
+  &__nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 10px;
+  }
+}
+
+.nav-menu {
+  background-color: $black;
+  padding: 9px 0;
+
+  &__box {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__link {
+    color: $white;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__other {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+  }
+}
+
+@media (max-width: 909px) {
+  .nav-menu {
+    display: none;
+  }
+}

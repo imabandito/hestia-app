@@ -1,0 +1,10 @@
+.profile {
+  h2 {
+    font-size: $fs-h2;
+    text-align: center;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

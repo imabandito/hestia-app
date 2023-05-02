@@ -1,0 +1,20 @@
+.payment-order-item {
+  padding-left: 6px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: $fs-h6;
+
+  &__text {
+    color: $black-light;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  @include for-mobile-down {
+    font-size: $fs-default;
+  }
+}

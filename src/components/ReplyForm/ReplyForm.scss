@@ -1,0 +1,72 @@
+.reply-form {
+  padding-bottom: 10px;
+  border-bottom: 1px solid $grey-dust;
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    label {
+      display: inline-block;
+      min-width: 70px;
+      color: $grey-midDark;
+      font-size: $fs-milli;
+    }
+  }
+
+  &__controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  input,
+  textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid $grey-dust;
+    outline: none;
+    font-family: Futura PT;
+
+    &::placeholder {
+      color: $black;
+      font-family: Futura PT;
+    }
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .reply-form_invalid-input {
+    border-color: $crimson;
+  }
+
+  @include for-tablet-up {
+    padding: 16px;
+    margin: 26px 0px 0px auto;
+    background: $grey-light;
+    border: none;
+
+    &_payment {
+      margin-top: 0;
+    }
+  }
+
+  &_payment {
+    border: none;
+  }
+}
+
+.reply-form .reply-form_invalid-input {
+  border-color: $crimson;
+}

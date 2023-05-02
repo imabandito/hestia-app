@@ -1,0 +1,385 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Futura PT';
+  font-size: $fs-medium;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &_black {
+    color: $white;
+    background-color: $black;
+  }
+
+  &_none {
+    background-color: transparent;
+  }
+
+  &_white {
+    color: $black;
+    background-color: $white;
+  }
+
+  &_blue {
+    color: $white;
+    background-color: $blue;
+  }
+
+  &_green {
+    color: $white;
+    background-color: $green;
+  }
+
+  &_greenDark {
+    color: $white;
+    background-color: $green-dark;
+
+    &:disabled {
+      background: $grey;
+      cursor: not-allowed;
+    }
+  }
+
+  &_purple {
+    color: $white;
+    background-color: $purple;
+  }
+
+  &_maroon {
+    color: $maroon;
+    background-color: transparent;
+
+    svg {
+      path {
+        stroke: $maroon;
+      }
+    }
+  }
+
+  &_greenTransparent {
+    border: 1px solid $green-dark;
+    color: $green;
+    background: transparent;
+
+    &:hover {
+      gap: 20px;
+    }
+
+    svg {
+      path {
+        stroke: $green-dark;
+      }
+    }
+  }
+
+  &_greenTransparentLight {
+    color: $green-light;
+    background: transparent;
+
+    svg {
+      path {
+        stroke: $green-light;
+      }
+    }
+  }
+
+  &_blackTransparent {
+    border: 1px solid $black;
+    color: $black;
+    background: transparent;
+  }
+
+  &_large {
+    width: -webkit-fill-available;
+    height: 52px;
+    font-size: $fs-h6;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+  }
+
+  &_small {
+    width: 33%;
+    padding: 10px 0;
+    font-size: $fs-h6;
+    font-weight: 400;
+  }
+
+  &_medium {
+    width: 50%;
+    padding: 10px 0;
+    font-size: $fs-h6;
+    font-weight: 400;
+  }
+
+  &-categoryCard {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    height: 40px;
+    width: 90%;
+    transform: translateX(-50%);
+    transition: 0.3s;
+
+    @include for-tablet-up {
+      &:hover {
+        background: $grey-veryDark;
+        color: $white;
+      }
+    }
+  }
+
+  &_about {
+    padding: 10px 24px;
+  }
+
+  &_catalog-shopcart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    &:hover path,
+    &:hover ellipse {
+      fill: $green-dark;
+    }
+  }
+
+  &_catalog-heart {
+    position: absolute;
+    top: -4px;
+    right: -10px;
+
+    &:hover path,
+    .button_catalog-heart_liked {
+      fill: $crimson;
+    }
+  }
+
+  &_hero-section {
+    margin: 0 0 16px 0;
+    border-radius: 4px;
+  }
+
+  &_support {
+    width: -webkit-fill-available;
+    padding: 12px;
+    font-size: $fs-h6;
+  }
+
+  &_recently-viewed-item {
+    position: absolute;
+    right: -10px;
+    top: 0;
+  }
+
+  &_infoBanner-closeIcon {
+    position: absolute;
+    right: 15px;
+  }
+
+  &_review {
+    text-decoration: underline;
+    border: none;
+  }
+
+  &_answer {
+    border: none;
+  }
+
+  &_accordion-item {
+    width: 100%;
+    padding: 16px;
+    border-top: 1px solid $grey-light;
+    border-bottom: 1px solid $grey-light;
+    font-size: $fs-h6;
+    justify-content: space-between;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  &_close {
+    transition: 0.3s;
+    &:hover {
+      transform: rotate(180deg);
+    }
+  }
+
+  &_postItem {
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: 0.3s;
+
+    &:hover {
+      background: $grey-veryDark;
+      color: $white;
+
+      svg path {
+        fill: $white;
+      }
+    }
+  }
+
+  svg {
+    transition: 0.3s;
+  }
+
+  &_rotate svg {
+    transform: rotate(180deg);
+  }
+
+  &_tab {
+    padding: 0;
+    position: relative;
+    font-size: $fs-h4;
+    color: $grey-superDark;
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &_tab-active {
+    padding: 0;
+    position: relative;
+    font-size: $fs-h4;
+    color: $black;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background: $pink-dark;
+      bottom: -11px;
+
+      @include for-tablet-up {
+        background: $green;
+      }
+    }
+  }
+
+  .button_file-action-upload {
+    padding: 4px 15px;
+    background: $green-superLight;
+    border-color: $green-superLight;
+    border-radius: 10px;
+
+    @include for-tablet-up {
+      background: $green;
+    }
+  }
+
+  &_learn-more {
+    color: $green;
+    border-bottom: 1px solid $green;
+  }
+
+  &_answer-rotate svg {
+    transform: rotate(90deg);
+  }
+
+  &_display-none {
+    display: none;
+  }
+
+  &_contact-verification {
+    padding: 10px 24px;
+    width: 100%;
+
+    &_active {
+      width: 100%;
+      padding: 10px 24px;
+      background: $green-dark;
+      color: $white;
+
+      @include for-mobile-down {
+        padding: 10px 14px;
+      }
+    }
+  }
+
+  @include for-mobile-down {
+    padding: 10px 14px;
+  }
+
+  &_product-review {
+    padding: 10px;
+    width: 50%;
+    max-width: 167px;
+    font-size: $fs-medium;
+    transition: 0.2s;
+
+    &:hover {
+      background: $white;
+      color: $black;
+      border: 1px solid black;
+    }
+
+    &.button_greenTransparent:hover {
+      background: $green-dark;
+      color: $white;
+      border-color: $white;
+    }
+  }
+
+  &_option-delete,
+  &_option-add,
+  &__option-clear {
+    border: 1px solid $black;
+
+    &:hover {
+      background-color: $grey-fade;
+    }
+  }
+
+  &_option-add {
+    margin-top: 10px;
+  }
+
+  &__option-clear {
+    margin-top: 10px;
+  }
+}
+
+.button_file-action-upload {
+  padding: 4px 15px;
+  background: $green-superLight;
+  border-color: $green-superLight;
+  border-radius: 10px;
+
+  &:hover:enabled {
+    border-color: $green;
+  }
+
+  &:disabled {
+    background: $grey-fade;
+    cursor: not-allowed;
+  }
+}
+
+.button_file-action-cancel {
+  padding: 4px 15px;
+  background: $pink;
+  border-radius: 10px;
+  border: 1px solid $pink;
+
+  &:hover {
+    border-color: $maroon;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    &_footer {
+      margin-top: 34px;
+    }
+
+    &_hero-section {
+      margin: 16px;
+      border-radius: 0;
+    }
+  }
+}

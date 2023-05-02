@@ -1,0 +1,24 @@
+.payment-numeric-title {
+  display: flex;
+  gap: 16px;
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+    background: $grey-dust;
+    border-radius: 50%;
+    color: $white;
+    font-size: $fs-milli;
+  }
+
+  p {
+    color: #030407;
+  }
+
+  &_checked {
+    background: $black-light;
+  }
+}

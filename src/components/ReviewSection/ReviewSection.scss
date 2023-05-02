@@ -1,0 +1,57 @@
+.review-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 0;
+  width: 100%;
+  overflow: hidden;
+
+  &__header {
+    font-size: $fs-h1;
+    font-weight: 500;
+    padding: 0 16px;
+  }
+
+  &__comments-container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    transition: transform 0.5s ease;
+    box-sizing: border-box;
+  }
+
+  &__all-dots {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 6px;
+  }
+}
+
+.slide-container {
+  display: flex;
+  gap: 16px;
+  min-width: -webkit-fill-available;
+  padding: 0 16px;
+  z-index: 10;
+  transition: all 1s linear;
+}
+
+.review-section-dot {
+  width: 8px;
+  height: 8px;
+  border: 1px solid $black;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &_active {
+    background-color: $black;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide-container {
+    flex-wrap: wrap;
+  }
+}

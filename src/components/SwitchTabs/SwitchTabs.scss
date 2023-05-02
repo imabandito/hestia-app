@@ -1,0 +1,14 @@
+.switch-tabs {
+  padding: 0 18px;
+  &__controls {
+    &-wrapper {
+      overflow-x: scroll;
+    }
+
+    min-width: max-content;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 16px;
+    border-bottom: 1px solid $grey-dust;
+  }
+}

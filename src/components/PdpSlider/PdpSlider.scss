@@ -1,0 +1,24 @@
+.pdp-slider {
+  position: relative;
+  padding: 8px 18px 16px 18px;
+
+  @media (min-width: 1024px) {
+    flex: 0 1 45%;
+  }
+}
+
+.video-link {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #f3f5f9;
+
+  a {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $black;
+  }
+}

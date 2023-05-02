@@ -1,0 +1,38 @@
+.payment-checkbox-title {
+  position: relative;
+  input[type='checkbox'] {
+    display: none;
+    position: relative;
+
+    &:checked + .payment-checkbox-title__fake {
+      position: relative;
+      border-color: $green-dark;
+      background: $green-dark;
+
+      &::after {
+        content: url('../../../assets/images/check.svg');
+
+        position: absolute;
+        top: 30%;
+        left: 54%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: 100%;
+        background-position: center;
+      }
+    }
+  }
+
+  &__label {
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  &__fake {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #c5cedc;
+  }
+}

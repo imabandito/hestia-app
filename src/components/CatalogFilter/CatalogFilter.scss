@@ -1,0 +1,63 @@
+.catalog-filter {
+  box-sizing: border-box;
+  max-height: 0;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  transition: max-height 0.05s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  &_open {
+    max-height: 500px;
+    margin: 20px 0px;
+  }
+
+  &.reply-form {
+    border-bottom: none;
+  }
+
+  .reply-form__field {
+    flex-direction: row;
+    align-items: center;
+
+    label {
+      min-width: 30px;
+      font-size: $fs-medium;
+    }
+
+    input {
+      max-width: 100px;
+    }
+  }
+
+  &-field {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    label {
+      min-width: fit-content;
+    }
+
+    &__title {
+      color: $grey-midDark;
+    }
+  }
+
+  .payment-checkbox-title__checkbox {
+    p {
+      color: $grey-midDark;
+    }
+  }
+
+  .catalog__select-box {
+    width: 70px;
+  }
+
+  .catalog-select {
+    border-color: $grey-dust;
+  }
+}

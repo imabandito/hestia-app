@@ -1,0 +1,12 @@
+.select {
+  border: none;
+  -webkit-appearance: none;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  width: 35px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}

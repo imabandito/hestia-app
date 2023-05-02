@@ -1,0 +1,25 @@
+.product-tags {
+  padding: 0 18px;
+  margin-bottom: 20px;
+  &__title {
+    font-size: $fs-h5;
+    line-height: 24px;
+    letter-spacing: 0.2;
+  }
+
+  &__link-container {
+    max-width: 300px;
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+.product-tag-link {
+  padding: 6px 16px;
+  font-size: $fs-medium;
+  line-height: 20px;
+  color: $black;
+  text-decoration: none;
+}

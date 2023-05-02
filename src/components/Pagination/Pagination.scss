@@ -1,0 +1,46 @@
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 15px;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $black;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+    background: $white;
+    transition: background-color 0.2s;
+    border: 1px solid $white;
+    cursor: pointer;
+
+    &:hover:not(.active, .disabled) {
+      background-color: rgb(238, 238, 238);
+    }
+  }
+
+  button.active {
+    background-color: $black;
+    color: $white;
+    border: 1px solid $white;
+  }
+
+  .disabled {
+    cursor: not-allowed;
+  }
+
+  &__pages {
+    display: flex;
+  }
+}
+
+.pagination-dots {
+  background-color: $white !important;
+  cursor: initial !important;
+}

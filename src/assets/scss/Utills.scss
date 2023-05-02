@@ -1,0 +1,68 @@
+body {
+  margin: 0 auto;
+  font-family: 'Futura PT';
+}
+
+.icon {
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+.rotate-back-90 {
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
+}
+
+.rotate-forward-90 {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.display-none {
+  display: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+
+  &_header-payment {
+    padding: 0px 15px;
+  }
+}
+
+.background-fill {
+  background-color: $white;
+
+  &_greyLight {
+    background-color: $grey-light;
+  }
+
+  &_green-super-light {
+    background: $green-superLight;
+  }
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.small-padding {
+  padding: 4px;
+}

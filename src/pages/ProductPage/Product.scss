@@ -1,0 +1,39 @@
+.product {
+  min-height: 100vh;
+
+  &__description {
+    @media (min-width: 1024px) {
+      flex: 0 1 55%;
+    }
+  }
+
+  &-wrapper {
+    @media (min-width: 1024px) {
+      display: flex;
+      column-gap: 32px;
+    }
+  }
+
+  &__tabs {
+    margin: 20px 0px;
+  }
+
+  &-reviews {
+    background: $grey-light;
+    padding: 40px 20px;
+    h4 {
+      font-weight: 500;
+      font-size: $fs-h4;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: $fs-medium;
+      margin: 10px 0px;
+    }
+
+    @include for-tablet-up {
+      background: $green-superLight;
+    }
+  }
+}

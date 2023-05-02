@@ -1,0 +1,27 @@
+.accordion-item {
+  max-height: 54px;
+  transition: max-height 0.15s ease-in-out;
+  overflow: hidden;
+
+  &_opened {
+    max-height: 100vh;
+    overflow: scroll;
+  }
+}
+
+.accordion-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin: 0 16px;
+}
+
+.accordion-link {
+  justify-content: flex-start;
+  width: -webkit-fill-available;
+  padding: 16px 24px;
+  font-size: $fs-medium;
+  color: $black;
+  background-color: $grey-light;
+  text-decoration: none;
+}

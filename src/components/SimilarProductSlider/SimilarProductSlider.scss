@@ -1,0 +1,93 @@
+.similar-product-slider {
+  display: none;
+  height: fit-content;
+  margin: 40px 0 !important;
+  width: 65%;
+  opacity: 1;
+
+  @media (max-width: 845px) {
+    width: 100%;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  &_full {
+    width: 100%;
+  }
+}
+.products-loader-box {
+  height: 107px;
+  position: relative;
+  margin: 40px 0 !important;
+  width: 65%;
+  opacity: 1;
+
+  @media (max-width: 845px) {
+    width: 100%;
+  }
+
+	&_full {
+    width: 100%;
+  }
+}
+
+.similar-product {
+  width: fit-content;
+
+  &__image {
+    max-width: 100%;
+    width: 104px;
+    height: 104px;
+    object-fit: cover;
+  }
+
+  &__price {
+    margin-top: 4px;
+    text-align: center;
+  }
+}
+
+.similar-products-slide {
+  max-width: 104px;
+  min-width: 104px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 50%;
+  width: 30px !important;
+  height: 30px !important;
+  background: $white;
+  border: 1px solid $grey;
+  border-radius: 50%;
+  color: $green-dark !important;
+  font-weight: 700;
+  outline: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
+
+  &::after {
+    font-size: 12px !important;
+  }
+}
+
+.swiper-button-prev {
+  &:after {
+    position: relative;
+    left: -1px;
+  }
+}
+
+.swiper-button-next {
+  &:after {
+    position: relative;
+    left: 1px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+}

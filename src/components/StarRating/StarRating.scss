@@ -1,0 +1,29 @@
+.star-rating {
+  display: flex;
+  gap: 2px;
+  width: fit-content;
+}
+
+.rating-default {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+
+  &_disabled {
+    cursor: initial;
+  }
+}
+
+.on {
+  svg {
+    fill: $black;
+  }
+}
+
+.off {
+  svg {
+    fill: $white;
+  }
+}

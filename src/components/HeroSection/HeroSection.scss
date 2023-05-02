@@ -1,0 +1,29 @@
+.hero-section {
+  &__categories {
+    display: flex;
+    margin: 16px;
+    gap: 8px;
+
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+    &__categories {
+      order: 1;
+      flex-direction: column;
+      flex-basis: 25%;
+      margin: 0;
+  
+      &__item {
+        height: 80px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

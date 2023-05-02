@@ -1,0 +1,126 @@
+.review {
+  padding: 16px 16px 0px 16px;
+  background: $white;
+
+  &:not(:first-child) {
+    padding: 16px 0px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 12px;
+    border-bottom: 1px solid $grey-dust;
+  }
+
+  &__reply {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  &__answer {
+    margin-top: 10px;
+    box-sizing: border-box;
+  }
+
+  &__on-answer {
+    padding: 16px 0px;
+  }
+
+  &__form {
+    margin: 10px 0px;
+    max-width: 500px;
+  }
+
+  @include for-tablet-up() {
+    padding: 16px 0px;
+    background: transparent;
+    &-answer {
+      padding: 16px 0px;
+    }
+
+    &-user__image {
+      width: 64px;
+      height: 64px;
+    }
+
+    &-user-info {
+      background: $white;
+      padding: 16px;
+
+      &__header {
+        flex-direction: column;
+        gap: 6px;
+      }
+    }
+
+    &__content {
+      border: none;
+    }
+
+    .button_answer,
+    .button_answer-rotate {
+      display: none;
+    }
+
+    .tag {
+      background: transparent;
+      font-size: $fs-milli;
+      text-transform: capitalize;
+    }
+
+    &__reply {
+      padding-left: 84px;
+    }
+  }
+
+  @include for-mobile-down {
+    padding: 16px 6px 0px 6px;
+  }
+}
+
+.review-user {
+  &__image {
+    height: max-content;
+    margin-top: 5px;
+  }
+
+  @include for-tablet-up {
+    &__image {
+      margin-top: 0;
+    }
+  }
+}
+
+.review-user-info {
+  width: 100%;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__message {
+    margin-top: 8px;
+    line-height: 18px;
+    color: $grey-veryDark;
+  }
+
+  &__date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+}
+
+.user-info-name-container {
+  display: flex;
+  gap: 16px;
+}
+
+.reviewer-date {
+  font-size: $fs-milli;
+  color: $grey;
+}

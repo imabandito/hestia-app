@@ -1,0 +1,42 @@
+.payment-card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 327px;
+  padding: 24px 28px;
+  background: $white;
+  border: 1px solid #c9cdd6;
+
+  &-row {
+    display: flex;
+    gap: 23px;
+
+    &:not(:first-child) {
+      margin-top: 28px;
+    }
+  }
+
+  &-field {
+    input {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      padding: 11px 0px;
+      border-bottom: 1px solid #d7d6d6;
+      outline: none;
+      color: $grey-deep;
+      font-size: 13px;
+
+      &:not(&[id='date']) {
+        letter-spacing: 4px;
+      }
+    }
+
+    label {
+      font-weight: 400;
+      font-size: $fs-default;
+      line-height: 20px;
+      color: $black-dark;
+    }
+  }
+}

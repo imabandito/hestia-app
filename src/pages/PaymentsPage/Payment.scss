@@ -1,0 +1,96 @@
+.payment {
+  padding: 15px;
+  min-height: 100vh;
+  display: flex;
+  gap: 20px;
+  position: relative;
+
+  .contact-verification-form {
+    border-bottom: none;
+
+    @include for-tablet-up {
+      padding: 0;
+    }
+  }
+
+  &-empty {
+    width: 100%;
+    &-wrapper {
+      height: 100vh;
+    }
+
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    h1 {
+      font-size: $fs-h1;
+    }
+  }
+
+  &-info {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    &:has(.card-checkout_visible) {
+      .payment-info {
+        display: none;
+      }
+      .card-checkout_visible {
+        width: 100%;
+      }
+
+      .checkout-card {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__upper {
+          box-sizing: border-box;
+          width: 100%;
+          max-width: 327px;
+        }
+      }
+    }
+  }
+}
+
+.button_payment-accordion-item {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.card-checkout {
+  position: absolute;
+  right: 0;
+  transform: translateY(-125%);
+
+  &_visible {
+    position: relative;
+    animation-name: bounce;
+    animation-duration: 1s;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-125%);
+  }
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}

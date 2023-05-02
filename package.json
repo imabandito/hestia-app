@@ -1,5 +1,5 @@
 {
-  "homepage": "http://imabandito.github.io/hestia",
+  "homepage": "http://imabandito.github.io/hestia-app/",
   "name": "hestia-frontend",
   "version": "0.1.0",
   "private": true,
@@ -30,7 +30,7 @@
     "sass": "^1.54.8",
     "swiper": "^8.4.4",
     "web-vitals": "^2.1.4"
-  }, 
+  },
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
